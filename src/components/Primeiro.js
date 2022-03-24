@@ -1,4 +1,5 @@
 import React from 'react';
 import {Text} from 'react-native';
+import estilo from './estilo';
 
-export default () => <Text>Primeiro sakdasd</Text>
+export default () => <Text style={estilo.fontG}>Primeiro sakdasd</Text>

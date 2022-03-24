@@ -1,16 +1,23 @@
 //quando é exportado por default ele nao precisa estar dentro de chaves
 //quando é exportado sem o default, obrigatoriamente precisa estar dentro de chaves
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 import Primeiro from './components/Primeiro';
-import X, {Comp2, Comp3} from './components/Multi';
+import CompPadrao, {Comp2, Comp3} from './components/Multi';
 
 export default () => (
-    <View>
-        <X/>
+    <View style={style.App}>
+        <CompPadrao/>
         <Comp2/>
         <Comp3/>
         <Primeiro/>
     </View>
 );
 
+const style = StyleSheet.create({
+    App:{
+        flexGrow: 1, //o tanto que o componente pode crescer
+        justifyContent: "center", //eixo principal (eixo vertical)
+        alignItems: "center", //eixo secundário (eixo horizontal)
+    } 
+})
