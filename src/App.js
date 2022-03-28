@@ -8,16 +8,18 @@
 // import Titulo from './components/Titulo';
 // import Contador from './components/Contador'
 // import Pai from './components/direta/Pai'
+// import Pai from './components/indireta/Pai';
+// import Filho from './components/indireta/Filho';
 
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import Pai from './components/indireta/Pai';
-import Filho from './components/indireta/Filho';
+import ContadorV2 from './components/contador/ContadorV2'
 
 export default () => (
     <View style={style.App}>
-        <Pai />
+        <ContadorV2/>
         {/* <MiniMax min={3} max={20}/>
+        <Pai />
         <Contador inicial={100} passo={13} />
         <Contador />
         <Botao />
