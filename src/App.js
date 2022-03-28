@@ -15,17 +15,24 @@
 // import ParImpar from './components/ParImpar';
 // import Familia from './components/relacao/Familia';
 // import Membro from './components/relacao/Membro';
+// import UsuarioLogado from './components/UsuarioLogado';
+// import ListaProdutos from './components/produtos/ListaProdutos';
+// import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 
 import React from 'react';
 import {Text, View, StyleSheet, SafeAreaView} from 'react-native';
-import UsuarioLogado from './components/UsuarioLogado';
+import DigiteSeuNome from './components/DigiteSeuNome';
 
 export default () => (
     <SafeAreaView style={style.App}>
+        <DigiteSeuNome />
+
+        {/* <MiniMax min={3} max={20}/>
+        <ListaProdutosV2/>
+        <ListaProdutos />
         <UsuarioLogado usuario={{nome:'gui', email:'gui@gui.com'}}/>
         <UsuarioLogado usuario={{nome:'gui'}}/>
         <UsuarioLogado usuario={{nome:'carlos', email: 'carlitos@ass.com'}}/>
-        {/* <MiniMax min={3} max={20}/>
         <Familia>
             <Membro nome="joao" sobrenome="silva"/>
             <Membro nome="junior" sobrenome="silva"/>
