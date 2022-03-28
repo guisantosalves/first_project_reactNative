@@ -10,21 +10,39 @@
 // import Pai from './components/direta/Pai'
 // import Pai from './components/indireta/Pai';
 // import Filho from './components/indireta/Filho';
+// import ContadorV2 from './components/contador/ContadorV2';
+// import Diferenciar from './components/Diferenciar';
+// import ParImpar from './components/ParImpar';
+// import Familia from './components/relacao/Familia';
+// import Membro from './components/relacao/Membro';
 
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import ContadorV2 from './components/contador/ContadorV2'
+import {Text, View, StyleSheet, SafeAreaView} from 'react-native';
+import UsuarioLogado from './components/UsuarioLogado';
 
 export default () => (
-    <View style={style.App}>
-        <ContadorV2/>
+    <SafeAreaView style={style.App}>
+        <UsuarioLogado usuario={{nome:'gui', email:'gui@gui.com'}}/>
+        <UsuarioLogado usuario={{nome:'gui'}}/>
+        <UsuarioLogado usuario={{nome:'carlos', email: 'carlitos@ass.com'}}/>
         {/* <MiniMax min={3} max={20}/>
+        <Familia>
+            <Membro nome="joao" sobrenome="silva"/>
+            <Membro nome="junior" sobrenome="silva"/>
+        </Familia>
+        <Familia>
+            <Membro nome="aaaaa" sobrenome="bbbbb"/>
+            <Membro nome="ccccc" sobrenome="ddddd"/>
+        </Familia>
+        <ParImpar num={3}/>
+        <Diferenciar />
+        <ContadorV2/>
         <Pai />
         <Contador inicial={100} passo={13} />
         <Contador />
         <Botao />
         <Titulo principal="Cadastro" secundario="Tela de cadastro do produto"/>
-        <MiniMax min={2} max={21}/> 
+        <MiniMax min={2} max={21}/>
         <Aleatorio min={1} max={20}/>
         <Aleatorio min={1} max={15}/>
         <Aleatorio min={1} max={50}/>
@@ -32,7 +50,7 @@ export default () => (
         <Comp2/>
         <Comp3/>
         <Primeiro/> */}
-    </View>
+    </SafeAreaView>
 );
 
 const style = StyleSheet.create({
@@ -41,5 +59,5 @@ const style = StyleSheet.create({
         justifyContent: "center", //eixo principal (eixo vertical)
         alignItems: "center", //eixo secundário (eixo horizontal)
         padding: 20,
-    } 
+    }
 })
