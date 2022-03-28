@@ -18,16 +18,24 @@
 // import UsuarioLogado from './components/UsuarioLogado';
 // import ListaProdutos from './components/produtos/ListaProdutos';
 // import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
+// import DigiteSeuNome from './components/DigiteSeuNome';
+// import FlexboxV1 from './components/layout/FlexboxV1';
 
 import React from 'react';
 import {Text, View, StyleSheet, SafeAreaView} from 'react-native';
-import DigiteSeuNome from './components/DigiteSeuNome';
+
+import FlexboxV2 from './components/layout/FlexboxV2';
 
 export default () => (
     <SafeAreaView style={style.App}>
+        
+        <FlexboxV2/>
+        
+        {
+        /*
+        <FlexboxV1/> 
         <DigiteSeuNome />
-
-        {/* <MiniMax min={3} max={20}/>
+        <MiniMax min={3} max={20}/>
         <ListaProdutosV2/>
         <ListaProdutos />
         <UsuarioLogado usuario={{nome:'gui', email:'gui@gui.com'}}/>
