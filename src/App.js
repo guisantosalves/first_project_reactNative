@@ -22,20 +22,22 @@
 // import FlexboxV1 from './components/layout/FlexboxV1';
 // import FlexboxV2 from './components/layout/FlexboxV2';
 // import FlexboxV3 from './components/layout/FlexboxV3';
+// import FlexboxV4 from './components/layout/FlexboxV4';
 
 import React from 'react';
 import {Text, View, StyleSheet, SafeAreaView} from 'react-native';
-import FlexboxV4 from './components/layout/FlexboxV4';
+import Mega from './components/mega/Mega';
 
 
 export default () => (
     <SafeAreaView style={style.App}>
         
+        <Mega qtdNumeros={12} />
         
-        <FlexboxV4/>
 
         {
         /*
+        <FlexboxV4/>
         <FlexboxV3/>
         <FlexboxV2/>
         <FlexboxV1/> 
